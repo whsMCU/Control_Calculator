@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
         itemList.add(Calculator_Item(R.drawable.baseline_calculate_black_48dp,"Value로 계산", "Zero, Span, mA 입력하면 Value로 출력"))
         itemList.add(Calculator_Item(R.drawable.baseline_calculate_black_48dp,"점검시트", "점검시트"))
 
-        val Calculator_Adapter = Calculator_Adapter(itemList)
-        Calculator_Adapter.notifyDataSetChanged()
+        val Adapter = Calculator_Adapter(itemList)
+        Adapter.notifyDataSetChanged()
 
-        recycler_view.adapter = Calculator_Adapter
+        recycler_view.adapter = Adapter
         recycler_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
 
